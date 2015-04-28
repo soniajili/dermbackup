@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submitCaseButton"
+            android:layout_width="200dip"
+            android:layout_height="75dip"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit Case"/>
+
+        <Button
+            android:id="@+id/viewCollectionButton"
+            android:layout_width="200dip"
+            android:layout_height="75dip"
+            android:layout_gravity="center_horizontal"
+            android:text="View Collection"/>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="200dip"
+            android:layout_height="75dip"
+            android:layout_gravity="center_horizontal"
+            android:text="Search By Diagnosis"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="200dip"
+            android:layout_height="75dip"
+            android:layout_gravity="center_horizontal"
+            android:text="Log Out"/>
+    </LinearLayout>
+</LinearLayout>

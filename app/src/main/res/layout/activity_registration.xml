@@ -1,0 +1,160 @@
+<RelativeLayout
+    android:id="@+id/registration"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cis350.instaderm.RegistrationActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="679dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <!-- Full Name Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8FF"
+                android:inputType="textPersonName"
+                android:textSize="15dp"
+                />
+
+            <!-- Year of Birth Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year of Birth"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/yearBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8FF"
+                android:inputType="number"
+                android:textSize="15dp"
+                />
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/emailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#F8F8FF"
+                android:hint="Your email will also be your username"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp"/>
+
+            <!-- Password Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8FF"
+                android:clickable="false"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textSize="15dp"/>
+
+            <!-- Gender Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#F8F8FF"
+                android:text="Select from menu"
+                android:textSize="15dp"
+                />
+
+            <!-- Country Label -->
+            <TextView
+                android:id="@+id/countryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_country"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8FF"
+                android:hint="Begin typing to display countries"
+                android:textSize="15dp"/>
+
+            <!-- Practice Setting Label -->
+            <TextView
+                android:id="@+id/practiceSettingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practice Setting"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/setting_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#F8F8FF"
+                android:text="Select from menu"
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:text="Register"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
